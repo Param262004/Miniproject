@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/docx to pdf/style.css"> -->
+   <link rel="stylesheet" href="/style.css">
+  </head>
+  
+
+  <body>
+
+    <nav class="nav , h-nav">
+    
+      <ul class="v-class , nav-list , transition">
+        <li><a class="" href="http://127.0.0.1:5501/home/index.html">Home</a></li>
+        <li>
+          <label for="btn-2" class="show">Convert To PDF +</label>
+          <a href="#" class="remove">Convert To</a>
+          <input type="checkbox" id="btn-2" />
+          <ul>
+            <li><a href="http://127.0.0.1:5501/image%20to%20pdf/index.html">PNG TO PDF</a></li>
+            <li><a href="http://localhost:5500/">Word TO PDF</a></li>
+            <!-- <li><a href="#" class="remov">EXCEL TO PDF </a></li> -->
+            <li><a href="#" class="remov">POWERPOINT TO PDF</a></li>
+            <li>
+              <!-- <label for="btn-3" class="remove" class="show">More +</label> -->
+              <a href="#" class="remove"
+                >More <span class="fa fa-plus"></span
+              ></a>
+              <input type="checkbox" id="btn-3" />
+              <ul>
+                <!-- <li><a href="#">EXCEL TO PDF </a></li>
+                <li><a href="#"> PDF TO POWERPOINT</a></li> -->
+                <li><a href="#">POWERPOINT TO PDF</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn-1" class="show">Convert From Pdf +</label>
+          <a href="#" class="remove">Convert From PDF</a>
+          <input type="checkbox" id="btn-1" />
+          <ul>
+            <li><a href="http://127.0.0.1:5501/pdf%20to%20image/index.html">PDF TO PNG</a></li>
+            <li><a href="http://127.0.0.1:5000/">PDF TO Word</a></li>
+            <!-- <li><a href="#" class="remov">PDF TO EXCEL </a></li>
+            <li><a href="#" class="remov">PDF TO POWERPOINT</a></li> -->
+            <!-- <li><a href="#">Icons</a></li> -->
+            <li>
+              <!-- <label for="btn-3" class="remove" class="show">More +</label> -->
+              <a href="#" class="remove"
+                >More <span class="fa fa-plus"></span
+              ></a>
+              <input type="checkbox" id="btn-3" />
+              <ul class="seen">
+                <!-- <li><a href="#">PDF TO EXCEL </a></li>
+                <li><a href="#">PDF TO POWERPOINT</a></li> -->
+                <!-- <li><a href="#">POWERPOINT TO PDF</a></li> -->
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="active" href="/marge.html">Merge PDF</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <video
+      autoplay
+      loop
+      muted
+      plays-inline
+      class="back-video1"
+      style="position: fixed"
+    >
+      <source src="/videoplayback (1).mp4" />
+    </video>
+    <video
+      autoplay
+      loop
+      muted
+      plays-inline
+      class="back-video"
+      style="position: fixed"
+    >
+      <source
+        src="/ANIME SCENERY EDIT _ BEAUTY OF ANIME _ 4K ANIME AMV _ PEPEKACHU.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+
+
+    <section class="box">
+      <section class="h1 text-shadow">
+          <h1>CONVERT docx TO PDF</h1>
+      </section>
+
+      <form action="/docxtopdf" method="post" enctype="multipart/form-data">
+          <label class="file">
+              <h5>Drop a DOCX file or click to select</h5>
+              <input class="hover" type="file" name="file" onChange="loadFile(event)" required>
+          </label>
+
+          <div id="pdfContainer"></div>
+
+          <div class="button">
+              <button type="button" onClick="pdfDown()">Convert to PDF</button>
+          </div>
+      </form>
+  </section>
+
+
+  <script src="/script.js"></script>
+  <script src="/index1.js"></script>
+ 
+
+</body>
+</html>

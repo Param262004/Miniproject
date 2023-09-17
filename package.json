@@ -1,0 +1,25 @@
+{
+    "name": "my-express-app",
+    "version": "0.0.1",
+    "description": "A simple Express.js app with file upload functionality",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha",
+        "start": "node index.js"
+    },
+    "keywords": [
+        "express",
+        "multer",
+        "file-upload",
+        "nodejs"
+    ],
+    "author": "John Doe",
+    "license": "MIT",
+    "dependencies": {
+        "docx-pdf": "^0.0.1",
+        "express": "^4.18.2",
+        "multer": "^1.4.4",
+        "nodemon": "^3.0.1",
+        "pdf-lib": "^1.17.1"
+    }
+}
